@@ -20,7 +20,7 @@ Code Code
 2. **Move the Script to a Directory in Your PATH**:
     You can move the script to `/usr/local/bin/` or another directory that's in your PATH. Make sure to rename it to `aggregate_code` (without the `.py` extension) so you can run it directly:
     ```sh
-    mv /path/to/aggregate_code.py /usr/local/bin/aggregate_code
+    sudo mv /path/to/aggregate_code.py /usr/local/bin/aggregate_code
     ```
 
 3. **Ensure `/usr/local/bin` is in Your PATH**:
