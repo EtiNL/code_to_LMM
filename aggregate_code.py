@@ -1,4 +1,5 @@
-#!/home/etin_l/.pyenv/versions/code_to_LMM/bin/python
+#!/home/etienne/code/Python/code_to_LMM/code_to_LLM/bin/python
+
 
 import os
 import sys

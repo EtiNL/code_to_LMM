@@ -20,7 +20,7 @@ Code Code
 2. **Move the Script to a Directory in Your PATH**:
     You can move the script to `/usr/local/bin/` or another directory that's in your PATH. Make sure to rename it to `aggregate_code` (without the `.py` extension) so you can run it directly:
     ```sh
-    sudo cp -f /path/to/aggregate_code.py /usr/local/bin/aggregate_code
+    sudo cp -f aggregate_code.py /usr/local/bin/aggregate_code
     ```
 
 3. **Ensure `/usr/local/bin` is in Your PATH**:
@@ -40,7 +40,11 @@ Code Code
     ```
 
 4. **Update the Shebang Line in Your Script**:
-    Make sure the shebang line at the top of your script points to the correct Python interpreter in your `pyenv` environment. For example:
+    Make sure the shebang line at the top of your script points to the correct Python interpreter in your virtual environment, once activated, one can find the path of this venv with 
+    ```sh
+    which python
+    ```
+    For example:
     ```sh
     #!/home/user/.pyenv/versions/my_custom_env/bin/python
     ```
