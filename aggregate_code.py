@@ -191,9 +191,11 @@ if __name__ == "__main__":
     folder_path = sys.argv[1]
     aggregated_code = aggregate_code_from_folder(folder_path)
 
+    num_lines = sum(1 for ln in aggregated_code.splitlines() if ln.strip())
+
     try:
         import pyperclip
         pyperclip.copy(aggregated_code)
-        print("Aggregated code copied to clipboard!")
+        print(f"Aggregated {num_lines} code lines copied to clipboard!")
     except ImportError:
         print("pyperclip module not installed. Install it to enable clipboard functionality.")
